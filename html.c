@@ -11,3 +11,7 @@
   <td><strong>AGE</strong></td>
   <td>18</td>
  </tr>
+ <tr>
+  <td><strong>PHONE NUMBER</strong></td>
+  <td>33-56</td>
+ </tr>

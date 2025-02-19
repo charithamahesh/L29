@@ -15,3 +15,7 @@
   <td><strong>PHONE NUMBER</strong></td>
   <td>33-56</td>
  </tr>
+ <tr>
+  <td><strong>ADDRESS</strong></td>
+  <td>BANGLORE</td>
+ </tr>

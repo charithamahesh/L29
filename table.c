@@ -24,4 +24,10 @@
 <th rowspan="2">accesories</th>
 <th>$23</th>
 </tr>
-
+<tr>
+<th>earing</th>
+<th rowspan="2">accesories</th>
+<th>$12</th>
+</tr>
+<th colspan="2">total price</th>
+<th>$2050</th>

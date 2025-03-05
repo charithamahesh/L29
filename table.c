@@ -17,5 +17,11 @@
 <tr>
 <th>headphones</th>
 <th rowspan="2">electronics</th>
+<th>$123</th>
+</tr>
+<tr>
+<th>bangles</th>
+<th rowspan="2">accesories</th>
+<th>$23</th>
 </tr>
 

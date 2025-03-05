@@ -29,5 +29,12 @@
 <th rowspan="2">accesories</th>
 <th>$12</th>
 </tr>
+<tr>
+<th>electric stove</th>
+<th>appliances</th>
+<th>$345</th>
+</tr>
+<tr>
+</tr>
 <th colspan="2">total price</th>
 <th>$2050</th>

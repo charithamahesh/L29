@@ -12,4 +12,10 @@
 <tr>
 <th>phone</th>
 <th rowspan="2">electronics</th>
+<th>$260</th>
 </tr>
+<tr>
+<th>headphones</th>
+<th rowspan="2">electronics</th>
+</tr>
+

@@ -24,4 +24,14 @@ int main() {
 		case 6:
 			printf("friday\n");
 			break;
+                case 7:
+			printf("saturday\n");
+			break;
+		default:
+			printf("invalid input please enter a number between 1 and 7.\n");
+	}
 
+
+	return 0;
+
+}

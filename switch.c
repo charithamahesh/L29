@@ -15,4 +15,13 @@ int main() {
 		case 3:
 			printf("tuesday\n");
 			break;
-			
+		case 4:
+			printf("wednesday\n");
+			break;
+		case 5:
+			printf("thursday\n");
+			break;
+		case 6:
+			printf("friday\n");
+			break;
+

@@ -6,6 +6,7 @@ int main () {
 	printf("1.Computer science and Engineering\n");
         printf("2.Artificial Intelligance\n");
 	printf("3.Electronics and Communication Engineering\n");
+	printf("4.Mechanical Engineering\n");
 
 	scanf("%d",&choice);
 
@@ -18,6 +19,9 @@ case2:
 		break;
 case3:
 		printf("you selected Electronics and Communication engineering.\n");
+		break;
+case4:
+		printf("you selected Mechanical Engineering.\n");
 		break;
 		default:
 		printf("invalid choice! please select a number between 1 and 4.\n");

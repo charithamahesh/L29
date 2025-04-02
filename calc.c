@@ -17,6 +17,9 @@ int main() {
 		case'-':
 			printf("result:%.2|f\n",num1-num2);
 			break;
+		case'*':
+			printf("result:%.2|f\n",num1,num2);
+			break;
 			default:
 			printf("invalid operator!\n");
 

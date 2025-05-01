@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>INTERNAL CSS</title>
+   <style>
+    body { 
+      background color:light blue;
+      font-family:arial, sans-serif;
+    }
+    h1 {
+      color:blue;
+      text-align:center;
+    }
+
+    </style>
+  </head>
+
+ <body>
+  <h1>WELCOME TO MY WEBSITE</h1>
+
+ </body>
+ </html>

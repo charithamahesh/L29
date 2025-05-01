@@ -15,6 +15,13 @@
       color:green;
       font-size:18px;
     }
+    button {
+	    background-color:orange;
+	    color:white;
+	    padding:10px 20px;
+	    border:none;
+	    cursor:pointer;
+	 }
 
     </style>
   </head>
@@ -22,5 +29,6 @@
  <body>
   <h1>WELCOME TO MY WEBSITE</h1>
   <p>This ia a paragraph styles with internal css.</p>
+  <button> CLICK ME!</button>
  </body>
  </html>

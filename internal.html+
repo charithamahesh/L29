@@ -11,12 +11,16 @@
       color:blue;
       text-align:center;
     }
+    p {
+      color:green;
+      font-size:18px;
+    }
 
     </style>
   </head>
 
  <body>
   <h1>WELCOME TO MY WEBSITE</h1>
-
+  <p>This ia a paragraph styles with internal css.</p>
  </body>
  </html>

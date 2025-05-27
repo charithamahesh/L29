@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add and Remove Button Example</title>
+</head>
+<body>
+
+  <h2>Add or Remove a Button</h2>
+
+  <button onclick="addButton()">Add Button</button>
+  <button onclick="removeButton()">Remove Button</button>
+
+  <div id="buttonContainer" style="margin-top: 20px;"></div>
+
+  <script>
+    function addButton() {
+      // Check if the button already exists
+      if (!document.getElementById("dynamicButton")) {
+        const newButton = document.createElement("button");
+        newButton.id = "dynamicButton";
+        newButton.innerText = "I'm a dynamic button!";
+        newButton.style.margin = "10px";
+        newButton.onclick = () => alert("Dynamic Button Clicked!");
+        document.getElementById("buttonContainer").appendChild(newButton);
+      }
+    }
+
+    function removeButton() {
+      const button = document.getElementById("dynamicButton");
+      if (button) {
+        button.remove();
+      }
+    }
+  </script>
+
+</body>
+</html>

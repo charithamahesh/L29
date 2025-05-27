@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener </title>
+</head>
+<body>
+
+  <h2>Click the Button</h2>
+  <button id="myButton">Click Me!</button>
+  <p id="myText">MY NMAE IS CHARITHA M.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const text = document.getElementById("myText");
+    button.addEventListener("click", function() {
+      text.innerText = "AMITY UNIVERSITY BENGALURU!";
+    });
+  </script>
+
+</body>
+</html>

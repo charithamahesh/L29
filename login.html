@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #3b82f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .forgot a {
+      text-decoration: none;
+      color: #3b82f6;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #1d4ed8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .signup-link {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .signup-link a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 10px 0;
+      color: #aaa;
+    }
+
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .facebook {
+      background: #3b5998;
+      color: white;
+    }
+
+    .google {
+      background: #f1f1f1;
+      color: black;
+    }
+   </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <div class="forgot"><a href="#">Forgot password?</a></div>
+    <button class="login-btn">Login</button>
+    <div class="signup-link">
+      Don't have an account? <a href="#">Signup</a>
+    </div>
+    <div class="divider">Or</div>
+    <button class="social-btn facebook">Login with Facebook</button>
+    <button class="social-btn google">Login with Google</button>
+  </div>
+
+</body>
+</html>

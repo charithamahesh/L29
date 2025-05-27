@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MOUSE OVER</title>
+</head>
+<body>
+
+  <h2> Hover Over the Button</h2>
+  <button id="myButton">Click or Hover Me!</button>
+  <p id="myText">This is the original text.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const text = document.getElementById("myText");
+    button.addEventListener("click", function() {
+      text.innerText = "The button was clicked!";
+    });
+    button.addEventListener("mouseover", function() {
+      text.innerText = "You hovered over the button!";
+    });
+  </script>
+
+</body>
+</html>

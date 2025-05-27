@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline CSS Example</title>
+</head>
+<body>
+
+  <h1 style="font-size: 36px; color: white; background-color: teal;">
+    Welcome!
+  </h1>
+
+  <p>SEN-A86605224155</p> 
+
+</body>
+</html>

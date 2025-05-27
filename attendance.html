@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Entry - QR Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+    table {
+      margin-top: 10px;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 500px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #007BFF;
+      color: white;
+    }
+    #qrcode {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Entry</h2>
+
+  <!-- Entry Form -->
+  <input type="text" id="studentId" placeholder="Enter ID" />
+  <input type="text" id="location" placeholder="Enter Location (must include)" />
+  <button onclick="addToList()">Add to List</button>
+
+  <!-- Student List Table -->
+  <h3>Student List</h3>
+  <table id="studentTable">
+    <thead>
+      <tr><th>ID</th><th>Location</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button onclick="generateQRCode()">Generate QR for All Students</button>
+  <div id="qrcode"></div>
+
+  <!-- QR Code Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+  <script>
+    const studentList = [];
+
+    function addToList() {
+      const id = document.getElementById("studentId").value.trim();
+      const location = document.getElementById("location").value.trim();
+      if (id && location) {
+        studentList.push({ id, location });
+        updateTable();
+        document.getElementById("studentId").value = "";
+        document.getElementById("location").value = "";
+      } else {
+        alert("Please enter both ID and location.");
+      }
+    }
+
+    function updateTable() {
+      const tbody = document.querySelector("#studentTable tbody");
+      tbody.innerHTML = "";
+      studentList.forEach(student => {
+        const row = tbody.insertRow();
+        row.insertCell(0).textContent = student.id;
+        row.insertCell(1).textContent = student.location;
+      });
+    }
+
+    function generateQRCode() {
+      if (studentList.length === 0) {
+        alert("No students in the list.");
+        return;
+      }
+      const qrData = JSON.stringify(studentList);
+      QRCode.toCanvas(document.createElement("canvas"), qrData, { width: 200 }, function (err, canvas) {
+        if (err) {
+          alert("Error generating QR code.");
+          console.error(err);
+        } else {
+          const qrContainer = document.getElementById("qrcode");
+          qrContainer.innerHTML = "";
+          qrContainer.appendChild(canvas);
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

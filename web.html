@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Utility Tool</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { margin: 5px; padding: 10px; }
+    #result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2></h2>
+  <input type="number" id="numInput" placeholder="Enter a number" />
+  <br>
+  <button onclick="printTillNumber()">Print All Numbers</button>
+  <button onclick="checkEvenOdd()">Check Even or Odd</button>
+  <button onclick="checkSign()">Check Positive / Negative / Zero</button>
+  <button onclick="sumTillNumber()">Sum of Numbers Till Input</button>
+
+  <div id="result"></div>
+
+  <script>
+    function getInput() {
+      const value = parseInt(document.getElementById("numInput").value);
+      if (isNaN(value)) {
+        alert("Please enter a valid number.");
+        return null;
+      }
+      return value;
+    }
+
+    function printTillNumber() {
+      const num = getInput();
+      if (num === null) return;
+      const result = [];
+      const step = num >= 1 ? 1 : -1;
+      for (let i = 1; step > 0 ? i <= num : i >= num; i += step) {
+        result.push(i);
+      }
+      document.getElementById("result").innerText = "Numbers: " + result.join(", ");
+    }
+
+    function checkEvenOdd() {
+      const num = getInput();
+      if (num === null) return;
+      const type = num % 2 === 0 ? "Even" : "Odd";
+      document.getElementById("result").innerText = `The number ${num} is ${type}.`;
+    }
+
+    function checkSign() {
+      const num = getInput();
+      if (num === null) return;
+      let sign = "";
+      if (num > 0) {
+        sign = "Positive";
+      } else if (num < 0) {
+        sign = "Negative";
+      } else {
+        sign = "Zero";
+      }
+      document.getElementById("result").innerText = `The number ${num} is ${sign}.`;
+    }
+
+    function sumTillNumber() {
+      const num = getInput();
+      if (num === null) return;
+      let sum = 0;
+      if (num >= 1) {
+        for (let i = 1; i <= num; i++) sum += i;
+      } else {
+        for (let i = 1; i >= num; i--) sum += i;
+      }
+      document.getElementById("result").innerText = `Sum of numbers till ${num} is: ${sum}`;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+ul {
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  color: #2a4d69;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  list-style-type: square;
+}
